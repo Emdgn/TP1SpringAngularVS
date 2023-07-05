@@ -1,0 +1,15 @@
+<div style="margin-top: 5%; margin-left: 20%; margin-right: 20%">
+    <h3 class="h3" style="text-align: center; margin-bottom: 2%;">Ajouter une oeuvre</h3>
+    <form [formGroup]="oeuvreForm" class="formGroup" (submit)="ajouterOeuvre(oeuvreForm.value)">
+        <input type="hidden" formControlName="numOeuvre" />
+        <div class="mb-3">
+            <label for="nom">Nom :</label>
+            <input type="text" class="form-control" id="nom" formControlName="nom" required />
+        </div>
+        <div class="mb-3">
+            <label for="duree">Durée :</label>
+            <input type="text" class="form-control" id="duree" formControlName="duree" required />
+        </div>
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+    </form>
+</div>
