@@ -7,6 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { ConcertComponent } from './concert/concert.component';
 import { FormulaireConcertComponent } from './concert/formulaire-concert/formulaire-concert.component';
 import { UpdateConcertComponent } from './concert/update-concert/update-concert.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AjouterOeuvreComponent } from './Oeuvre/ajouter-oeuvre/ajouter-oeuvre.component';
+import { AfficherOeuvresComponent } from './Oeuvre/afficher-oeuvres/afficher-oeuvres.component';
+import { ModifierOeuvreComponent } from './Oeuvre/modifier-oeuvre/modifier-oeuvre.component';
+import { LieuComponent } from './Lieu/lieu.component';
+import { AfficherLieuxComponent } from './Lieu/afficher-lieux/afficher-lieux.component';
+import { AjouterLieuComponent } from './Lieu/ajouter-lieu/ajouter-lieu.component';
+import { ModifierLieuComponent } from './Lieu/modifier-lieu/modifier-lieu.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +24,21 @@ import { UpdateConcertComponent } from './concert/update-concert/update-concert.
     FormulaireConcertComponent,
     UpdateConcertComponent,
     HttpClientModule,
+    NavbarComponent,
+    AjouterOeuvreComponent,
+    AfficherOeuvresComponent,
+    ModifierOeuvreComponent,
+    LieuComponent,
+    AfficherLieuxComponent,
+    AjouterLieuComponent,
+    ModifierLieuComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
