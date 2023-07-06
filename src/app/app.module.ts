@@ -9,7 +9,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterOeuvreComponent } from './Oeuvre/ajouter-oeuvre/ajouter-oeuvre.component';
 import { AfficherOeuvresComponent } from './Oeuvre/afficher-oeuvres/afficher-oeuvres.component';
 import { ModifierOeuvreComponent } from './Oeuvre/modifier-oeuvre/modifier-oeuvre.component';
-import { LieuComponent } from './lieu/lieu.component';
+import { LieuComponent } from './Lieu/lieu.component';
+import { AfficherLieuxComponent } from './Lieu/afficher-lieux/afficher-lieux.component';
+import { AjouterLieuComponent } from './Lieu/ajouter-lieu/ajouter-lieu.component';
+import { ModifierLieuComponent } from './Lieu/modifier-lieu/modifier-lieu.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { LieuComponent } from './lieu/lieu.component';
     AjouterOeuvreComponent,
     AfficherOeuvresComponent,
     ModifierOeuvreComponent,
-    LieuComponent
+    LieuComponent,
+    AfficherLieuxComponent,
+    AjouterLieuComponent,
+    ModifierLieuComponent
   ],
   imports: [
     BrowserModule,
