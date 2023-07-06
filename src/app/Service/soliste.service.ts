@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Soliste } from '../Model/soliste';
+import { Soliste } from '../models/soliste';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
