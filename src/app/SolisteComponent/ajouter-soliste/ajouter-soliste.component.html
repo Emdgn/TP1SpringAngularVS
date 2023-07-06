@@ -1,0 +1,17 @@
+<form [formGroup]="solisteForm">
+
+    <label for="nom">Nom</label>
+    <input type="text" formControlName="nom">
+    
+    <label for="prenom">Prénom</label>
+    <input type="text" formControlName="prenom">
+  
+    <label for="dateNaissance">Date de naissance</label>
+    <input type="date" formControlName="dateNaissance">
+
+    <label for="nationalite">Nationalité</label>
+    <input type="text" formControlName="nationalite">
+    
+    <button type="submit" (click)="enregistrerSoliste()">Ajouter soliste</button>
+    
+  </form>
