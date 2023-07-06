@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Concert } from '../model/concert.model';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -23,10 +25,10 @@ export class ConcertService {
     return this.http.get<Concert[]>("http://localhost:8080/listeConcert");
   }
 
-  // getConcertByNum(num:number):Observable<Concert>
-  // {
-  //   return this.http.get<Concert>("http://localhost:8080/getLivre/" + num);
-  // }
+  getConcertByNum(num:number):Observable<Concert>
+  {
+    return this.http.get<Concert>("http://localhost:8080/getLivre/" + num);
+  }
 
   updateConcert(concert:Concert):Observable<boolean>
   {

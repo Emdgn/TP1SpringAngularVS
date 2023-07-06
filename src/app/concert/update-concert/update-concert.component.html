@@ -1,1 +1,16 @@
-<p>update-concert works!</p>
+<div *ngIf="concertForm">
+    <form [formGroup]="concertForm">
+      <div class="mb-3">
+  
+        <input type="hidden" class="form-control" formControlName="num">
+  
+        <label for="nom" class="form-label">Nom du concert</label>
+        <input type="text" class="form-control" formControlName="nom">
+      </div>
+      <div class="mb-3">
+        <label for="date" class="form-label">Date</label>
+        <input type="text" class="form-control" formControlName="date">
+      </div>
+      <button type="submit" class="btn btn-primary" (click)="updateConcert()">Enregistrer</button>
+    </form>
+  </div>
