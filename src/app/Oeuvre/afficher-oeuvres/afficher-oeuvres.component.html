@@ -4,12 +4,12 @@
     <div style="display: flex; align-items: center; gap: 1%; margin-bottom: 1%;">
         <div style="display: flex; align-items: center; gap: 5%;">
             <label for="nomFiltre">Nom</label>
-            <input type="text" [(ngModel)]="recherche" (input)="filtrerOeuvresParNom()" placeholder="Chercher par nom"
+            <input type="text" [(ngModel)]="recherche" (input)="filtrerOeuvres()" placeholder="Chercher par nom"
                 style="margin-bottom: 1%;" />
         </div>
         <div style="display: flex; align-items: center; gap: 5%;">
             <label for="dureeFiltre">Durée</label>
-            <select id="dureeFiltre" [(ngModel)]="dureeSelectionnee" (change)="filtrerOeuvresParDuree()"
+            <select id="dureeFiltre" [(ngModel)]="dureeSelectionnee" (change)="filtrerOeuvres()"
                 class="form-select w-auto">
                 <option value="0">Tous</option>
                 <option value="5">&lt; 5</option>

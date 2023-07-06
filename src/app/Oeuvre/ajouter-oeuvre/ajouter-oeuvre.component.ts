@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Oeuvre } from 'src/app/models/oeuvre';
-import { OeuvreServiceService } from 'src/app/Service/oeuvre-service.service';
+import { OeuvreServiceService } from 'src/app/services/oeuvre-service.service';
 
 
 @Component({
