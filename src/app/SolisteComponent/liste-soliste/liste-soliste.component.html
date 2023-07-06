@@ -17,7 +17,7 @@
         <td>{{soliste.nationalite}}</td>
         <td>
             <button (click)="delete(soliste.idSoliste)">Supprimer</button>
-            <button>Modifier</button>
+            <button (click)="update(soliste.idSoliste)">Modifier</button>
         </td>
       </tr>
     </tbody>

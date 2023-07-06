@@ -1,17 +1,20 @@
-<form [formGroup]="solisteForm">
+<div *ngIf="solisteForm">
+
+</div>
+<form>
 
     <label for="nom">Nom</label>
     <input type="text" formControlName="nom">
-    
+
     <label for="prenom">Prénom</label>
     <input type="text" formControlName="prenom">
-  
+
     <label for="dateNaissance">Date de naissance</label>
     <input type="date" formControlName="dateNaissance">
 
     <label for="nationalite">Nationalité</label>
-    <input type="date" formControlName="nationalite">
-    
-    <button type="submit" (click)="enregistrerSoliste()">Ajouter soliste</button>
-    
-  </form>
+    <input type="text" formControlName="nationalite">
+
+    <input type="submit" (click)="modifierSoliste()" value="Envoyer">    
+
+</form>

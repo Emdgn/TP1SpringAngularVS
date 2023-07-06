@@ -9,22 +9,19 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { AjouterOeuvreComponent } from './Oeuvre/ajouter-oeuvre/ajouter-oeuvre.component';
 import { AfficherOeuvresComponent } from './Oeuvre/afficher-oeuvres/afficher-oeuvres.component';
 import { ModifierOeuvreComponent } from './Oeuvre/modifier-oeuvre/modifier-oeuvre.component';
-<<<<<<< HEAD
+
 import { LieuComponent } from './Lieu/lieu.component';
 import { AfficherLieuxComponent } from './Lieu/afficher-lieux/afficher-lieux.component';
 import { AjouterLieuComponent } from './Lieu/ajouter-lieu/ajouter-lieu.component';
 import { ModifierLieuComponent } from './Lieu/modifier-lieu/modifier-lieu.component';
-=======
-import { LieuComponent } from './lieu/lieu.component';
 import { AjouterSolisteComponent } from './SolisteComponent/ajouter-soliste/ajouter-soliste.component';
 import { ListeSolisteComponent } from './SolisteComponent/liste-soliste/liste-soliste.component';
+import { ModifierSolisteComponent } from './modifier-soliste/modifier-soliste.component';
 
->>>>>>> a1067fb437ae1b322f6fd4b887eedc677209f844
 
 @NgModule({
   declarations: [
     AppComponent,
-<<<<<<< HEAD
     NavbarComponent,
     AjouterOeuvreComponent,
     AfficherOeuvresComponent,
@@ -32,11 +29,10 @@ import { ListeSolisteComponent } from './SolisteComponent/liste-soliste/liste-so
     LieuComponent,
     AfficherLieuxComponent,
     AjouterLieuComponent,
-    ModifierLieuComponent
-=======
+    ModifierLieuComponent,
     AjouterSolisteComponent,
-    ListeSolisteComponent
->>>>>>> a1067fb437ae1b322f6fd4b887eedc677209f844
+    ListeSolisteComponent,
+    ModifierSolisteComponent
   ],
   imports: [
     BrowserModule,

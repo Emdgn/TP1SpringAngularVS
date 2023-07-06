@@ -30,6 +30,11 @@ export class SolisteService {
     return this.http.put<boolean>("http://localhost:8080/modifierSoliste/", soliste);
   }
 
+  getSolisteById(idSoliste:number):Observable<Soliste> {
+    return this.http.get<Soliste>("http://localhost:4200/getSoliste/" + idSoliste);
+
+  }
+
   
 
   
