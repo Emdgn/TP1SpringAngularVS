@@ -7,7 +7,7 @@ import { ModifierOeuvreComponent } from './Oeuvre/modifier-oeuvre/modifier-oeuvr
 const routes: Routes = [
   { path: 'ajouterOeuvre', component: AjouterOeuvreComponent },
   { path: 'afficherOeuvres', component: AfficherOeuvresComponent },
-  {path : "modifierOeuvre/:isbnOeuvre", component: ModifierOeuvreComponent}
+  {path : "modifierOeuvre/:numOeuvre", component: ModifierOeuvreComponent}
 ];
 
 @NgModule({
