@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormGroup, FormBuilder, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SolisteService } from 'src/app/Service/soliste.service';
+import { SolisteService } from 'src/app/services/soliste.service';
 
 @Component({
   selector: 'app-modifier-soliste',
@@ -16,6 +16,7 @@ export class ModifierSolisteComponent implements OnInit {
   constructor(private formBuilder:FormBuilder, private ar:ActivatedRoute, private ss:SolisteService, private router:Router) {
     this.idSoliste = ar.snapshot.params["idSoliste"];
   }
+
 
 
   ngOnInit(): void {

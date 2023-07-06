@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
-import { SolisteService } from 'src/app/Service/soliste.service';
+import { SolisteService } from 'src/app/services/soliste.service';
 
 @Component({
   selector: 'app-ajouter-soliste',
