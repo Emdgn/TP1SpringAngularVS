@@ -29,23 +29,14 @@ export class AfficherOeuvresComponent implements OnInit {
   findAllOeuvres() {
     this.oeuvreService.findAllOeuvres().subscribe((oeuvres: Oeuvre[]) => {
       this.oeuvres = oeuvres;
-      this.filtrerOeuvresParNom();
+      this.filtrerOeuvres();
     });
   }
 
-  filtrerOeuvresParNom() {
+  filtrerOeuvres() {
     this.oeuvresFiltrees = this.oeuvres.filter((oeuvre: Oeuvre) =>
-      oeuvre.nom.toLowerCase().includes(this.recherche.toLowerCase())
+      oeuvre.nom.toLowerCase().includes(this.recherche.toLowerCase()) &&
+      (this.dureeSelectionnee === 0 || oeuvre.duree < this.dureeSelectionnee)
     );
-  }
-
-  filtrerOeuvresParDuree() {
-    if (this.dureeSelectionnee > 0) {
-      this.oeuvresFiltrees = this.oeuvres.filter((oeuvre: Oeuvre) =>
-        oeuvre.duree < this.dureeSelectionnee
-      );
-    } else {
-      this.oeuvresFiltrees = this.oeuvres;
-    }
   }
 }
