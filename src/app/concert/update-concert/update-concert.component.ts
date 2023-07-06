@@ -15,7 +15,7 @@ export class UpdateConcertComponent implements OnInit {
   }
 
   livreForm?:FormGroup;
-  id!:number;
+  num!:number;
 
   ngOnInit(): void {
     this.cs.getConcertByNum(this.num).subscribe(data => {
