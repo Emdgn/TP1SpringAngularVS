@@ -1,0 +1,16 @@
+<form [formGroup]="livreForm">
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom du concert</label>
+      <input type="text" class="form-control" formControlName="nom">
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Date du concert</label>
+      <input type="text" class="form-control" formControlName="date">
+    </div>
+    <div class="mb-3">
+        <label for="lieu" class="form-label">Lieu du concert</label>
+        <input type="date" class="form-control" formControlName="lieu">
+      </div>
+    <button type="submit" class="btn btn-primary" (click)="saveLivre()">Enregistrer</button>
+    <button type="reset" class="btn btn-danger">Annuler</button>
+  </form>
