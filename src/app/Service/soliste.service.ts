@@ -32,7 +32,6 @@ export class SolisteService {
 
   getSolisteById(idSoliste:number):Observable<Soliste> {
     return this.http.get<Soliste>("http://localhost:4200/getSoliste/" + idSoliste);
-
   }
 
   

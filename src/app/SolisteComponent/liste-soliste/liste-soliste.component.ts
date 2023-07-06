@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { Soliste } from 'src/app/Model/soliste';
 import { SolisteService } from 'src/app/Service/soliste.service';
+import { Soliste } from 'src/app/models/soliste';
 
 @Component({
   selector: 'app-liste-soliste',

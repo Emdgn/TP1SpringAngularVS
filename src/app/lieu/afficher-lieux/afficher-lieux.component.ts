@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Lieu } from 'src/app/Model/lieu';
 import { LieuService } from 'src/app/Service/lieu.service';
+import { Lieu } from 'src/app/models/lieu';
 
 
 

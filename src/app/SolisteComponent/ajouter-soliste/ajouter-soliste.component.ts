@@ -32,6 +32,7 @@ export class AjouterSolisteComponent implements OnInit {
   {
 
     this.ss.enregistrerSoliste(this.solisteForm.value).subscribe();
+    this.router.navigateByUrl("infoSoliste");
   }
 
 }
