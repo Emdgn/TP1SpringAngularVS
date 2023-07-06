@@ -1,5 +1,24 @@
 <div style="margin-top: 5%; margin-left: 2%; margin-right: 2%">
     <h3 class="h3" style="text-align: center; margin-bottom: 2%;">Liste des oeuvres</h3>
+
+    <div style="display: flex; align-items: center; gap: 1%; margin-bottom: 1%;">
+        <div style="display: flex; align-items: center; gap: 5%;">
+            <label for="nomFiltre">Nom</label>
+            <input type="text" [(ngModel)]="recherche" (input)="filtrerOeuvresParNom()" placeholder="Chercher par nom"
+                style="margin-bottom: 1%;" />
+        </div>
+        <div style="display: flex; align-items: center; gap: 5%;">
+            <label for="dureeFiltre">Durée</label>
+            <select id="dureeFiltre" [(ngModel)]="dureeSelectionnee" (change)="filtrerOeuvresParDuree()"
+                class="form-select w-auto">
+                <option value="0">Tous</option>
+                <option value="5">&lt; 5</option>
+                <option value="10">&lt; 10</option>
+                <option value="15">&lt; 15</option>
+            </select>
+        </div>
+    </div>
+
     <table class="table">
         <thead>
             <tr>
@@ -9,14 +28,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr *ngFor="let oeuvre of oeuvres">
+            <tr *ngFor="let oeuvre of oeuvresFiltrees">
                 <th scope="row">{{ oeuvre.numOeuvre }}</th>
                 <td>{{ oeuvre.nom }}</td>
                 <td>{{ oeuvre.duree }}</td>
-        
+
                 <td>
-                    <a class="btn btn-warning" style="margin-right: 1%;" [href]="'/modifierOeuvre/' + oeuvre.numOeuvre">Modifier</a>
-                    <button type="button" class="btn btn-danger" style="margin-left: 1%;"(click)="supprimerOeuvre(oeuvre.numOeuvre)">Supprimer</button>
+                    <a class="btn btn-warning" style="margin-right: 1%;"
+                        [href]="'/modifierOeuvre/' + oeuvre.numOeuvre">Modifier</a>
+                    <button type="button" class="btn btn-danger" style="margin-left: 1%;"
+                        (click)="supprimerOeuvre(oeuvre.numOeuvre)">Supprimer</button>
                 </td>
             </tr>
         </tbody>

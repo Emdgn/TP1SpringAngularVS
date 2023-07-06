@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder } from '@angular/forms';
-import { Oeuvre } from 'src/app/Model/oeuvre';
+import { Oeuvre } from 'src/app/models/oeuvre';
 import { OeuvreServiceService } from 'src/app/Service/oeuvre-service.service';
 
 
