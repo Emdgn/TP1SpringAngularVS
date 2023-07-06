@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { LieuService } from 'src/app/Service/lieu.service';
 import { Lieu } from 'src/app/models/lieu';
-
-
+import { LieuService } from 'src/app/services/lieu.service';
 
 @Component({
   selector: 'app-afficher-lieux',
