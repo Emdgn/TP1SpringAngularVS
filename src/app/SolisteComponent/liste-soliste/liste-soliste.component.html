@@ -1,1 +1,25 @@
-<p>liste-soliste works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Identifiant</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Prenom</th>
+        <th scope="col">Date de naissance</th>
+        <th scope="col">Nationalité</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let soliste of listeSoliste | async">
+        <td>{{soliste.idSoliste}}</td>
+        <td>{{soliste.nom}}</td>
+        <td>{{soliste.prenom}}</td>
+        <td>{{soliste.dateNaissance}}</td>
+        <td>{{soliste.nationalite}}</td>
+        <td>
+            <button (click)="delete(soliste.idSoliste)">Supprimer</button>
+            <button (click)="update(soliste.idSoliste)">Modifier</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
